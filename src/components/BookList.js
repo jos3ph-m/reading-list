@@ -1,6 +1,6 @@
 export default function BookList({ books }) {
   const handleClick = async (id) => {
-    console.log(id);
+    console.log(`the id is ${id}`);
   };
 
   return (
