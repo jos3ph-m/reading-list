@@ -11,7 +11,7 @@ export default function Home() {
   ]);
 
   return (
-    <div>
+    <div className="App">
       {books && <BookList books={books} />}
       <BookForm />
     </div>
