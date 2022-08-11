@@ -12,3 +12,5 @@ const firebaseConfig = {
 
 // init firebase
 initializeApp(firebaseConfig);
+
+// init firestore
