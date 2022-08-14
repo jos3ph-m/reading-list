@@ -9,7 +9,7 @@ export default function Home() {
   const [books, setBooks] = useState(null);
 
   useEffect(() => {
-    const ref = collection();
+    const ref = collection(db, 'books');
   }, []);
 
   return (
