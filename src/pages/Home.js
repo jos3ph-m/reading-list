@@ -8,7 +8,9 @@ import { collection, getDocs } from 'firebase/firestore';
 export default function Home() {
   const [books, setBooks] = useState(null);
 
-  useEffect(() => {}, []);
+  useEffect(() => {
+    const ref = collection();
+  }, []);
 
   return (
     <div>
