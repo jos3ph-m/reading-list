@@ -5,7 +5,7 @@ import BookForm from '../components/BookForm';
 export default function Home() {
   const [books, setBooks] = useState(null);
 
-  useEffect();
+  useEffect(() => {}, []);
 
   return (
     <div>
