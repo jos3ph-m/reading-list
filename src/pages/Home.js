@@ -12,6 +12,7 @@ export default function Home() {
     const ref = collection(db, 'books');
 
     getDocs(ref).then((snapshot) => {
+      let results = [];
       snapshot.docs.forEach((doc) => {});
     });
   }, []);
