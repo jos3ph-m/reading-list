@@ -16,6 +16,7 @@ export default function Home() {
       snapshot.docs.forEach((doc) => {
         results.push({ id: doc.id, ...doc.data() });
       });
+      setBooks(results);
     });
   }, []);
 
