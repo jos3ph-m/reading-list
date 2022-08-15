@@ -11,7 +11,9 @@ export default function Home() {
   useEffect(() => {
     const ref = collection(db, 'books');
 
-    getDocs(ref).then((snapshot) => {});
+    getDocs(ref).then((snapshot) => {
+      snapshot.docs.forEach();
+    });
   }, []);
 
   return (
