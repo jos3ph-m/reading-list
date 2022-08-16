@@ -9,5 +9,7 @@ export const useCollection = (c) => {
 
   useEffect(() => {
     let ref = collection(db, c);
+
+    onSnapshot(ref, (snapshot) => {});
   }, []);
 };
