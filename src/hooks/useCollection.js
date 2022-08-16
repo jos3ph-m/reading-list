@@ -17,5 +17,6 @@ export const useCollection = (c) => {
       });
       setDocuments(results);
     });
+    return () => unsub();
   }, []);
 };
