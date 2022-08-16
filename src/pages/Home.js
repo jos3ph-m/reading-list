@@ -1,10 +1,9 @@
-import { useState } from 'react';
 import BookList from '../components/BookList';
 import BookForm from '../components/BookForm';
+import { useCollection } from '../hooks/useCollection';
 
 export default function Home() {
-  const [books, setBooks] = useState(null);
-
+  const { documents: books } = useCollection();
   return (
     <div>
       {books && <BookList books={books} />}
