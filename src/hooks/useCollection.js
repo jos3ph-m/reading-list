@@ -12,6 +12,9 @@ export const useCollection = (c) => {
 
     onSnapshot(ref, (snapshot) => {
       let results = [];
+      snapshot.docs.forEach((doc) => {
+        results.push({ ...doc.data });
+      });
     });
   }, []);
 };
