@@ -4,8 +4,10 @@ import { db } from '../firebase.config';
 // firebase imports
 import { collection, onSnapshot } from 'firebase/firestore';
 
-export const useCollection = () => {
+export const useCollection = (c) => {
   const [documents, setDocuments] = useState(null);
 
-  useEffect(() => {}, []);
+  useEffect(() => {
+    let ref = collection(db, c);
+  }, []);
 };
