@@ -1,6 +1,7 @@
 import { useState } from 'react';
 
 // firebase imports
+import { db } from '../firebase/config';
 
 export default function BookForm() {
   const [newBook, setNewBook] = useState('');
