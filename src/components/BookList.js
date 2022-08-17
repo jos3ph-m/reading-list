@@ -1,7 +1,5 @@
 export default function BookList({ books }) {
-  const handleClick = async (id) => {
-    console.log(`the id is ${id}`);
-  };
+  const handleClick = async (id) => {};
 
   return (
     <div className="book-list">
