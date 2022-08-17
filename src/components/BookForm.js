@@ -10,6 +10,12 @@ export default function BookForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    const ref = collection(db, 'books');
+
+    await addDoc(ref, {
+      title: newBook,
+    });
+
     setNewBook('');
   };
 
