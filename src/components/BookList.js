@@ -1,4 +1,5 @@
 // import firebase
+import { db } from '../firebase/config';
 
 export default function BookList({ books }) {
   const handleClick = async (id) => {};
