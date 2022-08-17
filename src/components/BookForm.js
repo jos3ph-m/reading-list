@@ -9,7 +9,6 @@ export default function BookForm() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(`the book value entered was ${newBook}`);
 
     setNewBook('');
   };
