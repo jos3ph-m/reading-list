@@ -1,3 +1,5 @@
+// import firebase
+
 export default function BookList({ books }) {
   const handleClick = async (id) => {};
 
