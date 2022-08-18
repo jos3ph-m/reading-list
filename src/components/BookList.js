@@ -5,7 +5,7 @@ import { doc, deleteDoc } from 'firebase/firestore';
 export default function BookList({ books }) {
   const handleClick = async (id) => {
     const docRef = doc(db, 'books', id);
-    deleteDoc(docRef);
+    await deleteDoc(docRef);
   };
 
   return (
