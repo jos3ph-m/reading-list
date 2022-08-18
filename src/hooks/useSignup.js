@@ -1,3 +1,5 @@
 import { useState } from 'react';
 
-export const useSignup = () => {};
+export const useSignup = () => {
+  const [error, setError] = useState(null);
+};
