@@ -4,4 +4,6 @@ export const useSignup = () => {
   const [error, setError] = useState(null);
 
   const signup = () => {};
+
+  return { error, signup };
 };
