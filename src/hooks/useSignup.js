@@ -7,9 +7,7 @@ import { createUserWithEmailAndPassword } from 'firebase/auth';
 export const useSignup = () => {
   const [error, setError] = useState(null);
 
-  const signup = (email, password) => {
-    setError(null);
-  };
+  const signup = (email, password) => {};
 
   return { error, signup };
 };
