@@ -8,6 +8,7 @@ export const useSignup = () => {
   const [error, setError] = useState(null);
 
   const signup = (email, password) => {
+    // set error to null
     setError(null);
   };
 
