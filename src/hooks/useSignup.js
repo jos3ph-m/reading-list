@@ -9,7 +9,7 @@ export const useSignup = () => {
 
   const signup = (email, password) => {
     setError(null);
-    createUserWithEmailAndPassword(email, password);
+    createUserWithEmailAndPassword(auth, email, password);
   };
 
   return { error, signup };
