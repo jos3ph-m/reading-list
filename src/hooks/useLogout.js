@@ -1,1 +1,3 @@
-export const useLogout = () => {};
+export const useLogout = () => {
+  const logout = () => {};
+};
