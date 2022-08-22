@@ -17,7 +17,7 @@ export default function Navbar() {
         <li>
           <Link to="/signup">Signup</Link>
         </li>
-        <li>Logout</li>
+        <li onClick={logout}>Logout</li>
       </ul>
     </nav>
   );
