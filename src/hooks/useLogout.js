@@ -4,6 +4,8 @@ import { signOut } from 'firebase/auth';
 
 export const useLogout = () => {
   const logout = () => {
-    signOut(auth);
+    signOut(auth).then(() => {
+      console.log('');
+    });
   };
 };
