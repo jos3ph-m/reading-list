@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { useLogout } from '../hooks/useLogout';
 
 export default function Navbar() {
+  const { logout } = useLogout();
   return (
     <nav>
       <h1>My Reading List</h1>
