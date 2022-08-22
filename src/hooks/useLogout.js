@@ -3,5 +3,7 @@ import { auth } from '../firebase/config';
 import { signOut } from 'firebase/auth';
 
 export const useLogout = () => {
-  const logout = () => {};
+  const logout = () => {
+    signOut(auth);
+  };
 };
