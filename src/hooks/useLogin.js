@@ -14,7 +14,7 @@ export const useLogin = () => {
         console.log('user logged in:', res.user);
       })
       .catch((err) => {
-        console.log(err.message);
+        setError(err.message);
       });
   };
 
