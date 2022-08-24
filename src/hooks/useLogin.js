@@ -9,7 +9,9 @@ export const useLogin = () => {
 
   const login = (email, password) => {
     setError(null);
-    signInWithEmailAndPassword(auth, email, password);
+    signInWithEmailAndPassword(auth, email, password).then((res) => {
+      console.log('user logged in:', res.user);
+    });
   };
 
   return { error, login };
