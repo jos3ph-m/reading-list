@@ -1,3 +1,3 @@
 # reading-list
 
-A reading list app built following net ninja's course
+A reading list app built following netninja's course
