@@ -6,4 +6,6 @@ export const useLogin = () => {
   const login = (email, password) => {
     setError(null);
   };
+
+  return { error, login };
 };
