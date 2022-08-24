@@ -9,9 +9,13 @@ export const useLogin = () => {
 
   const login = (email, password) => {
     setError(null);
-    signInWithEmailAndPassword(auth, email, password).then((res) => {
-      console.log('user logged in:', res.user);
-    });
+    signInWithEmailAndPassword(auth, email, password)
+      .then((res) => {
+        console.log('user logged in:', res.user);
+      })
+      .catch((err) => {
+        console.log(err.message);
+      });
   };
 
   return { error, login };
