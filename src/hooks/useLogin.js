@@ -9,7 +9,7 @@ export const useLogin = () => {
 
   const login = (email, password) => {
     setError(null);
-    signInWithEmailAndPassword();
+    signInWithEmailAndPassword(auth, email, password);
   };
 
   return { error, login };
