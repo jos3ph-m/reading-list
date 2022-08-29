@@ -3,4 +3,7 @@ import { projectAuth } from '../firebase/config';
 
 export const AuthContext = createContext();
 
-export const authReducer = (state, action) => {};
+export const authReducer = (state, action) => {
+  switch (action.type) {
+  }
+};
