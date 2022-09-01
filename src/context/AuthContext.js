@@ -26,5 +26,5 @@ export const AuthContextProvider = ({children}) ={
       dispatch({type: 'AUTH_IS_READY', payload: user})
       unsub()
     })
-  })
+  }, [])
 }
