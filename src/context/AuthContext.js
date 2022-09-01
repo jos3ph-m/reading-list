@@ -27,4 +27,6 @@ export const AuthContextProvider = ({children}) ={
       unsub()
     })
   }, [])
+
+  console.log('AuthContext state:', state)
 }
