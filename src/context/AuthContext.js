@@ -23,7 +23,7 @@ export const AuthContextProvider = ({children}) ={
   })
   useEffect(() => {
     const unsub = projectAuth.onAuthStateChanged(user => {
-      dispatch({})
+      dispatch({type: 'AUTH_IS_READY', payload: user})
     })
   })
 }
