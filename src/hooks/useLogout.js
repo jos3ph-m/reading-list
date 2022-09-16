@@ -1,3 +1,5 @@
+import { useAuthContext } from './useAuthContext';
+
 // firebase imports
 import { auth } from '../firebase/config';
 import { signOut } from 'firebase/auth';
