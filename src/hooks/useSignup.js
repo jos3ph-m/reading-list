@@ -7,6 +7,7 @@ import { createUserWithEmailAndPassword } from 'firebase/auth';
 
 export const useSignup = () => {
   const [error, setError] = useState(null);
+  const { dispatch } = useAuthContext();
 
   const signup = (email, password) => {
     setError(null);
