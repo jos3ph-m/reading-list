@@ -11,7 +11,9 @@ export const useLogout = () => {
       .then(() => {
         dispatch({ type: 'LOGOUT' });
       })
-      .catch((err) => {});
+      .catch((err) => {
+        console.log(err);
+      });
   };
   return { logout };
 };
