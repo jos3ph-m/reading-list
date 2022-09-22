@@ -17,7 +17,6 @@ export const useLogin = () => {
       })
       .catch((err) => {
         setError(err.message);
-        setError(err);
       });
   };
 
