@@ -15,7 +15,7 @@ export const useLogin = () => {
       .then((res) => {
         dispatch({ type: 'LOGIN', payload: res.user });
       })
-      .catch(() => {
+      .catch((err) => {
         setError(err.message);
       });
   };
