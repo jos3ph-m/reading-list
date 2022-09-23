@@ -21,7 +21,7 @@ function App() {
             </Route>
             <Route path="/signup">
               {!user && <Signup />}
-              {user && <Redirect />}
+              {user && <Redirect to="/" />}
             </Route>
             <Route path="/login">{!user && <Login />}</Route>
           </Switch>
