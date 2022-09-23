@@ -8,6 +8,7 @@ import Login from './pages/Login';
 import Signup from './pages/Signup';
 
 function App() {
+  const { user, authIsReady } = useAuthContext();
   return (
     <div className="App">
       <BrowserRouter>
