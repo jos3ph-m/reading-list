@@ -25,7 +25,7 @@ function App() {
             </Route>
             <Route path="/login">
               {!user && <Login />}
-              {}
+              {user}
             </Route>
           </Switch>
         </BrowserRouter>
