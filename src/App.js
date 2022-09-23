@@ -18,9 +18,7 @@ function App() {
             <Route exact path="/">
               {user && <Home />}
             </Route>
-            <Route path="/signup">
-              <Signup />
-            </Route>
+            <Route path="/signup">{!user && <Signup />}</Route>
             <Route path="/login">
               <Login />
             </Route>
