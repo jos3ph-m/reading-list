@@ -1,4 +1,4 @@
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
 import { useAuthContext } from './hooks/useAuthContext';
 
 // components
@@ -17,7 +17,7 @@ function App() {
           <Switch>
             <Route exact path="/">
               {user && <Home />}
-              {!user}
+              {!user && <Redirect />}
             </Route>
             <Route path="/signup">{!user && <Signup />}</Route>
             <Route path="/login">{!user && <Login />}</Route>
