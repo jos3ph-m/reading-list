@@ -16,6 +16,7 @@ export default function BookForm() {
 
     await addDoc(ref, {
       title: newBook,
+      uid: user.uid,
     });
 
     setNewBook('');
