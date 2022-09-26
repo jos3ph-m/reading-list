@@ -7,6 +7,8 @@ import { collection, onSnapshot } from 'firebase/firestore';
 export const useCollection = (c, _q) => {
   const [documents, setDocuments] = useState(null);
 
+  // set up query
+
   useEffect(() => {
     let ref = collection(db, c);
 
