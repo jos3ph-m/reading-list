@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { db } from '../firebase/config';
 
 // firebase imports
@@ -8,6 +8,7 @@ export const useCollection = (c, _q) => {
   const [documents, setDocuments] = useState(null);
 
   // set up query
+  const q = useRef(_q);
 
   useEffect(() => {
     let ref = collection(db, c);
