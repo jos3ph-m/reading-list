@@ -7,6 +7,7 @@ import { collection, addDoc } from 'firebase/firestore';
 
 export default function BookForm() {
   const [newBook, setNewBook] = useState('');
+  const { user } = useAuthContext();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
