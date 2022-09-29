@@ -21,7 +21,7 @@ export const useCollection = (c, _q) => {
       setDocuments(results);
     });
     return () => unsub();
-  }, [c, q]);
+  }, [c]);
 
   return { documents };
 };
