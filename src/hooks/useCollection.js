@@ -1,7 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { db } from '../firebase/config';
 
-// firebase imports
 import { collection, onSnapshot } from 'firebase/firestore';
 
 export const useCollection = (c, _q) => {
