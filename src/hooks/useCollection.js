@@ -11,7 +11,7 @@ export const useCollection = (c, _q) => {
   const q = useRef(_q);
 
   useEffect(() => {
-    let ref = collection();
+    let ref = collection(db);
 
     const unsub = onSnapshot(ref, (snapshot) => {
       let results = [];
