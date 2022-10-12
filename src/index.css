@@ -36,7 +36,7 @@ nav a {
   padding: 0;
 }
 .book-list li {
-  list-style-type: none;
+  list-style-type: circle;
   padding: 10px;
   background: #eee;
   margin: 10px 0;
