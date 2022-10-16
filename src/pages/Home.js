@@ -8,7 +8,7 @@ export default function Home() {
   const { documents: books } = useCollection('books', ['uid', '==', user.uid]);
   return (
     <div>
-      {books && <BookList books={books} />}
+      {books}
       <BookForm />
     </div>
   );
