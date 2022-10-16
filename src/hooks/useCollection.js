@@ -18,7 +18,7 @@ export const useCollection = (c, _q) => {
       snapshot.docs.forEach((doc) => {
         results.push({ ...doc.data(), id: doc.id });
       });
-      setDocuments(results);
+      setDocuments();
     });
     return () => unsub();
   }, [c, q]);
