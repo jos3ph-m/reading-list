@@ -6,7 +6,7 @@ export default function Navbar() {
   const { logout } = useLogout();
   return (
     <nav>
-      <h1>Reading List</h1>
+      <h1>My Reading List</h1>
       <ul>
         <li>
           <Link to="/">Home</Link>
