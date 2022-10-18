@@ -13,7 +13,7 @@ export default function BookList({ books }) {
       <ul>
         {books.map((book) => (
           <li key={book.id} onClick={() => handleClick(book.id)}>
-            title: {book.title}
+            {book.title}
           </li>
         ))}
       </ul>
