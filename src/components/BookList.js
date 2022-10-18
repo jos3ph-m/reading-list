@@ -1,4 +1,4 @@
-// import firebase
+// imports
 import { db } from '../firebase/config';
 import { doc, deleteDoc } from 'firebase/firestore';
 
