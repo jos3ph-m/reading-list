@@ -20,7 +20,5 @@ export const useLogin = () => {
       });
   };
 
-  console.log(error);
-
   return { error, login };
 };
