@@ -16,7 +16,7 @@ export default function Login() {
       <h2>Login</h2>
       <form onSubmit={handleSubmit}>
         <label>
-          <span>email address:</span>
+          <span>email:</span>
           <input
             required
             type="email"
