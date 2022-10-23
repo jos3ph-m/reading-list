@@ -33,7 +33,7 @@ export default function Login() {
             value={password}
           />
         </label>
-        <button>log in</button>
+        <button></button>
         {error && <p>{error}</p>}
       </form>
     </div>
