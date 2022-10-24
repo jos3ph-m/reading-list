@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 import { db } from '../firebase/config';
 
 // firebase imports
-import { collection, onSnapshot, query } from 'firebase/firestore';
+import { collection, onSnapshot, query, where } from 'firebase/firestore';
 
 export const useCollection = (c, _q) => {
   const [documents, setDocuments] = useState(null);
