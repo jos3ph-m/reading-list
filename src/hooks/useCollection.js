@@ -8,7 +8,7 @@ export const useCollection = (c, _q) => {
   const [documents, setDocuments] = useState(null);
 
   // set up query
-  const q = useRef(_q);
+  const q = useRef(_q).current;
 
   useEffect(() => {
     let ref = collection(db, c);
