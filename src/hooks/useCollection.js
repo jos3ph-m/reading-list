@@ -13,6 +13,7 @@ export const useCollection = (c, _q) => {
   useEffect(() => {
     let ref = collection(db, c);
 
+    // query check
     if (q) {
       ref = query(ref, where(...q));
     }
