@@ -13,7 +13,8 @@ export const useCollection = (c, _q) => {
   useEffect(() => {
     let ref = collection(db, c);
 
-    if ()
+    if (q) {
+    }
 
     const unsub = onSnapshot(ref, (snapshot) => {
       let results = [];
