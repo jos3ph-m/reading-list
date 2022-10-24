@@ -13,6 +13,8 @@ export const useCollection = (c, _q) => {
   useEffect(() => {
     let ref = collection(db, c);
 
+    if ()
+
     const unsub = onSnapshot(ref, (snapshot) => {
       let results = [];
       snapshot.docs.forEach((doc) => {
