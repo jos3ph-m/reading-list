@@ -40,7 +40,7 @@ nav a {
   padding: 15px;
   background: #eee;
   margin: 10px 0;
-  cursor: alias; 
+  cursor: pointer;
 }
 label, label span {
   display: block;
