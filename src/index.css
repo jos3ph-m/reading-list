@@ -33,7 +33,7 @@ nav a {
   text-decoration: none;
 }
 .book-list ul {
-  padding: 0;
+  padding: 2px;
 }
 .book-list li {
   list-style-type: none;
