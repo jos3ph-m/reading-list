@@ -10,7 +10,7 @@ body {
 
 .App {
   max-width: 640px;
-  margin: 0 auto;
+  margin: 12px auto;
 }
 nav {
   background: #772eff;
