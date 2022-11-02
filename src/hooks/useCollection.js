@@ -15,6 +15,7 @@ export const useCollection = (c, _q) => {
 
     // query check
     if (q) {
+      ref = query(ref, where(...q));
     }
 
     const unsub = onSnapshot(ref, (snapshot) => {
