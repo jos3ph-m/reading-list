@@ -16,7 +16,7 @@ nav {
   background: #772eff;
   padding: 10px 20px;
   color: #fff;
-  display: flex;
+  display: flexbox;
   align-items: center;
 }
 nav h1 {
