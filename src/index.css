@@ -25,7 +25,7 @@ nav h1 {
 }
 nav li {
   display: inline-block;
-  margin: 0 0 0 1px;
+  margin: 0 0 0 15px;
   cursor: pointer;
 }
 nav a {
